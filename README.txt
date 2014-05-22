@@ -1,0 +1,2 @@
+This repository is for analysis and submissions to the Learning Social Circles in Networks Competition on Kaggle
+Code relies on external data from that competition that is not included in the repository.
