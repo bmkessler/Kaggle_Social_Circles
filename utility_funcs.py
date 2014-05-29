@@ -50,7 +50,7 @@ def matchvector(profile1,profile2,featurelist):
     given two profiles and a featurelist, returns the similarity vector for the two
     profiles where each entry is the number of entries they have in common for that feature
     """
-    out = []
+    out = [1]  # constant term added by the authors to account for connectivity
     for feature in featurelist:
         out.append(featurematch(profile1,profile2,feature))
     return out
@@ -62,3 +62,10 @@ def weighteddotproduct(vector1,vector2,weight=None):
     if not weight:
         weight = ones(len(vector1))
     return np.inner(vector1,np.multiply(weight,vector2))/mean(weight)
+    
+def scorecircles(predcircles,truecircles):
+    """
+    For each circle align the circles then compute minimum number of moves to 
+    match the circles.  This may be difficult...
+    """    
+    return 0
