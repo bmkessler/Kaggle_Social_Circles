@@ -1,0 +1,4 @@
+Affinity propagation
+1) using profile similarity (only updated along connected edges)
+2) using commute distance
+3) using miminum path distance (-min(n) such that A^n[i,j] is non zero, set self-similarity to median)
