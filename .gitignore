@@ -5,9 +5,7 @@ connected_components.py
 egonets/
 featureList.txt
 features.txt
-sample_submission.csv
-socialCircles_metric.py
-testSet_users_friends.csv
+*.csv
 
 ## from https://github.com/github/gitignore/blob/master/Python.gitignore
 
